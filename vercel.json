@@ -1,6 +1,11 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/pair.js" },
-    { "source": "/", "destination": "/index.html" }
-  ]
+    { "source": "/api/(.*)", "destination": "/api/pair.js" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" }
+  ],
+  "outputDirectory": "."
 }
